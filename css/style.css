@@ -1,6 +1,14 @@
 :root {
     --background: #00bf63;
     --verde-pesante: #005400;
+    --white: #fff;
+    --light-grey: #f4f4f4; /* Grigio chiaro, usato per hover su bottoni */
+    --dark-grey: #333333; /* Un grigio scuro per eventuali testi o elementi secondari */
+    --highlight: #ffbf00; /* Giallo-arancio per evidenziare call-to-action o elementi specifici */
+    --border-color: #dcdcdc; /* Grigio chiaro per bordi o linee di separazione */
+    --cta-bg: #00bf63; /* Colore di sfondo dei bottoni CTA (verde chiaro) */
+    --cta-text: #ffffff; /* Colore del testo per i bottoni CTA (bianco) */
+    --cta-hover-bg: #005400;
 }
 
 * {
@@ -167,6 +175,110 @@ ul li {
     color: #666;
 }
 
+.five-page {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--verde-pesante);
+}
+
+.pricing {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.plan {
+    background-color: var(--verde-pesante);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+.plan-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.plan-features {
+    text-align: left;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    background-color: var(--white);
+    color: var(--verde-pesante);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--light-grey);
+}
+
+.premium {
+    background-color: #00bf63;
+}
+
+.premium .cta-btn {
+    background-color: var(--white);
+    color: var(--verde-pesante);
+}
+
+.premium .cta-btn:hover {
+    background-color: var(--light-grey);
+}
+
+@media screen and (max-width: 1250px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     .column-right {
         display: none;
@@ -194,6 +306,10 @@ ul li {
     }
 
     .fourth-page {
+        height: auto;
+    }
+
+    .five-page {
         height: auto;
     }
 
