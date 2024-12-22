@@ -1,0 +1,25 @@
+:root {
+    --background: #00bf63;
+    --verde-pesante: #005400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--verde-pesante);
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    background: var(--background); 
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
