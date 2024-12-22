@@ -9,6 +9,10 @@
     --cta-bg: #00bf63; /* Colore di sfondo dei bottoni CTA (verde chiaro) */
     --cta-text: #ffffff; /* Colore del testo per i bottoni CTA (bianco) */
     --cta-hover-bg: #005400;
+    --footer-bg: #333333; /* Colore di sfondo del footer */
+    --footer-text: #ffffff; /* Colore del testo */
+    --footer-link: #00bf63; /* Colore dei link */
+    --footer-link-hover: #ffbf00; /* Colore hover dei link */
 }
 
 * {
@@ -299,6 +303,94 @@ ul li {
 
     .plan {
         width: 90%;
+    }
+}
+
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--footer-text);
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--footer-link);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--footer-text);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 }
 
