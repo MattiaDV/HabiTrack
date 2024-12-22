@@ -1,0 +1,11 @@
+{
+    "short_name": "HabiTrack",
+    "name": "HabiTrack, the app developed for track your habits",
+    "icons": [{
+        "src": "../img/logo.png",
+        "type": "image/jpg",
+        "sizes": "192x192"
+    }],
+    "theme_color": "#005400",
+    "display": "fullscreen"
+}
